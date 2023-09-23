@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 
-const SearchBar = () => {
+const SearchBar = ({ handleSearchText }) => {
   const [text, setText] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(text);
+    handleSearchText(text);
   };
 
   return (
