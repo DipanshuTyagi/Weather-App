@@ -9,7 +9,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 w-96 rounded-md h-auto pb-3">
+    <div className="bg-gradient-to-r from-sky-500 to-indigo-500 w-96 rounded-md h-auto pb-3 z-[999]">
       <SearchBar handleSearchData={handleSearchData} />
 
       {searchData && <ShowData data={searchData} />}
