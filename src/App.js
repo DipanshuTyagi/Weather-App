@@ -3,7 +3,7 @@ import HomePage from "./Pages/HomePage";
 
 const App = () => {
   return (
-    <div>
+    <div className="grid place-content-center h-screen bg-red-100">
       <HomePage />
     </div>
   );
